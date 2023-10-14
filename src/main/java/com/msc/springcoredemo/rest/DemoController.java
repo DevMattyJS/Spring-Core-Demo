@@ -18,7 +18,7 @@ public class DemoController {
     // we use for that @Qualifier(beanId( annotation - beanId is the same as its className, but with lower first letter
     @Autowired
     public DemoController(
-            @Qualifier("tennisCoach") Coach coach,
+            @Qualifier("swimCoach") Coach coach,
             @Qualifier("tennisCoach") Coach anotherCoach) {
         this.coach = coach;
         this.anotherCoach = anotherCoach;
